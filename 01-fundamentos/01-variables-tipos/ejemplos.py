@@ -1,24 +1,52 @@
-# Así se declaran variables en Python
-nombre = "Johan"          # Esto es un String (str)
-edad = 20                # Esto es un Integer (int)
-estatura = 1.75          # Esto es un Float (float)
-es_estudiante = True     # Esto es un Boolean (bool)
+"""
+Ejemplos de Variables y Tipos de Datos
+Fase 1 - Tema 1
+"""
 
-# Podemos imprimir los valores y sus tipos
-print(f"Hola, mi nombre es {nombre}")
-print(f"Tipo de dato de 'edad': {type(edad)}")
+# 1. Variables y Enteros (int)
+cajas_mudanza = 15
+libros_por_caja = 20
+total_libros = cajas_mudanza * libros_por_caja
 
-# Las variables pueden cambiar de valor (por eso se llaman variables)
-puntos = 10
-puntos = puntos + 5      # Ahora puntos vale 15
+print("--- ENTEROS ---")
+print("Total de cajas:", cajas_mudanza)
+print("Total de libros:", total_libros)
+print("Tipo de dato de 'cajas_mudanza':", type(cajas_mudanza))
+print()
 
+# 2. Flotantes (float)
+peso_caja_kg = 12.5
+altura_metro = 1.75
 
-# Adicional, python permite escribir variables con tipado estricto o dinamico
-# La manera dinamica es la que acabamos de ver
-# La manera estricta es la siguiente:
+print("--- FLOTANTES ---")
+print("El peso de la caja es:", peso_caja_kg, "kg")
+print("Tipo de dato de 'peso_caja_kg':", type(peso_caja_kg))
+print()
 
-numero: int = 10
-numero = numero + 5      # Ahora numero vale 15
-numero = "texto"         # Esto daria error en tipado estricto, sin embargo en python no es obligatorio el tipado estricto
+# 3. Cadenas de Texto (str)
+nombre_cliente = "Ana Gómez"
+direccion = 'Av. Siempre Viva 123'
 
-# No obstante, a pesar de que python sea un lenguaje de tipado dinamico, es buena practica usar tipado estricto para evitar errores
+print("--- TEXTO (STRINGS) ---")
+print("Cliente:", nombre_cliente)
+print("Dirección:", direccion)
+print("Tipo de dato de 'nombre_cliente':", type(nombre_cliente))
+print()
+
+# 4. Booleanos (bool)
+es_fragil = True
+envio_express = False
+
+print("--- BOOLEANOS ---")
+print("¿La caja es frágil?:", es_fragil)
+print("Tipo de dato de 'es_fragil':", type(es_fragil))
+print()
+
+# 5. Reasignación de Variables (Tipado Dinámico)
+# Python permite cambiar el tipo de dato que guarda una variable,
+# aunque no siempre es buena práctica.
+variable_misteriosa = "Soy un texto"
+print("Variable misteriosa (texto):", variable_misteriosa)
+
+variable_misteriosa = 100
+print("Variable misteriosa (ahora es número):", variable_misteriosa)
